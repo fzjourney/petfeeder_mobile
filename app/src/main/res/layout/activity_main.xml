@@ -1,0 +1,279 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@color/main_activity_background">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        android:layout_above="@id/fragment_container" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_weight="1" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:background="@color/fragment_background_color"
+        app:itemIconTint="@drawable/bottom_navigation_icon_color"
+        app:menu="@menu/menu_fragment" />
+
+    <!-- Top Quarter Frame -->
+    <FrameLayout
+        android:id="@+id/top_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_frame_background"
+        android:paddingBottom="20dp"
+        android:clipToOutline="true"
+        android:fontFamily="@font/ksfont">
+
+        <!-- Left Profile Picture -->
+
+        <!-- Owner Name -->
+        <ImageView
+            android:id="@+id/profile_picture"
+            android:fontFamily="@font/ksfont"
+            android:layout_width="121dp"
+            android:layout_height="120dp"
+            android:layout_gravity="top|start"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/profilepic"
+            android:background="@drawable/circle_background" />
+
+        <TextView
+            android:id="@+id/owner_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ksfont"
+            android:text="HELLO!"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="200dp" />
+
+        <!-- Pet Name and Age -->
+        <TextView
+            android:id="@+id/pet_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ksfont"
+            android:text="Happy Feeding"
+            android:textColor="@color/greens"
+            android:textSize="20sp"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="202dp" />
+
+    </FrameLayout>
+
+    <!-- Mid Quarter Frame -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginBottom="8dp"
+        android:text="Devices"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:fontFamily="@font/ksfont"/>
+
+    <FrameLayout
+        android:id="@+id/mid_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="180dp"
+        android:paddingBottom="20dp"
+        android:clipToOutline="true"
+        android:fontFamily="@font/ksfont">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <!-- Replace with your dynamic item generation code or RecyclerView -->
+
+                <!-- Example item -->
+                <FrameLayout
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/item_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@android:color/black" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/device_1"
+                        android:scaleType="fitCenter" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_feed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:background="@drawable/item_background"
+                        android:layout_gravity="center" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </FrameLayout>
+
+    <!-- Bot Quarter Frame   -->
+    <FrameLayout
+        android:id="@+id/bot_frame"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="380dp"
+        android:paddingBottom="40dp"
+        android:clipToOutline="true"
+        android:fontFamily="@font/ksfont">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/bot2_frame"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="470dp"
+        android:paddingBottom="40dp"
+        android:clipToOutline="true"
+        android:fontFamily="@font/ksfont">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/scheduleButton"
+                    android:layout_width="112dp"
+                    android:layout_height="112dp"
+                    android:background="@drawable/circles_background"
+                    android:src="@drawable/imgschedule"
+                    android:scaleType="fitCenter"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ksfont"
+                    android:paddingTop="9dp"
+                    android:text="SCHEDULE"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/historyButton"
+                    android:layout_width="112dp"
+                    android:layout_height="112dp"
+                    android:background="@drawable/circles_background"
+                    android:src="@drawable/imghistory"
+                    android:scaleType="fitCenter"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ksfont"
+                    android:paddingTop="9dp"
+                    android:text="FEED NOW"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginBottom="8dp"
+        android:text="EXPLORE"
+        android:textColor="@color/orange"
+        android:textSize="24sp"
+        android:fontFamily="@font/ksfont"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginBottom="8dp"
+        android:text="THE"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:fontFamily="@font/ksfont"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="420dp"
+        android:paddingLeft="60dp"
+        android:layout_marginBottom="8dp"
+        android:text="FEATURES"
+        android:textColor="@color/greens"
+        android:textSize="24sp"
+        android:fontFamily="@font/ksfont"/>
+
+</RelativeLayout>
+

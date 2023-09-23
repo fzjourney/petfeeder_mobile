@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn"
+    android:background="@color/lightblack">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/containersign" />
+
+    <ImageView
+        android:id="@+id/signindoggo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="130dp"
+        android:src="@drawable/casual_life_3d_side_view_of_dog_looking_up" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:id="@+id/signintext"
+        android:layout_below="@id/signindoggo"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:fontFamily="@font/ksfont"
+        android:layout_marginTop="-20dp"/>
+
+
+    <ImageView
+        android:id="@+id/emailblock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signintext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/rectangle_24kotakedittext"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/emailblock"
+        android:layout_below="@+id/signintext"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/ksfont"
+        android:hint="email"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        android:id="@+id/email_signin"
+        android:background="@null"/>
+
+
+    <ImageView
+        android:id="@+id/genderblock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailblock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/rectangle_24kotakedittext" />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/passwordblock"
+        android:layout_below="@+id/emailblock"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/ksfont"
+        android:hint="password"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        android:id="@+id/password_signin"
+        android:background="@null"/>
+
+    <ImageView
+        android:id="@+id/usernameblock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/genderblock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/rectangle_24kotakedittext" />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/usernameblock"
+        android:layout_below="@+id/genderblock"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/ksfont"
+        android:hint="username"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        android:id="@+id/username_signin"
+        android:background="@null"/>
+
+    <ImageView
+        android:id="@+id/passwordblock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernameblock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/rectangle_24kotakedittext" />
+
+
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/passwordblock"
+        android:layout_below="@+id/usernameblock"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/ksfont"
+
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        android:id="@+id/date_signin"
+        android:background="@null"/>
+
+    <Button
+        android:id="@+id/btn_date_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="478dp"
+        android:layout_marginEnd="63dp"
+        android:background="@android:color/transparent"
+        android:onClick="showDatePicker"
+        android:text="BIRTH DATE"
+        android:textColor="@color/brown" />
+
+    <Button
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/brown"
+        android:id="@+id/signinbtn"
+        android:fontFamily="@font/ksfont"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/white"
+        android:layout_below="@+id/passwordblock"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn"
+    android:background="@color/lightblack">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/container" />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:id="@+id/logindoggo"
+            android:src="@drawable/business_3d_dog_astronaut"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WELCOME"
+            android:id="@+id/welcometext"
+            android:layout_below="@id/logindoggo"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:fontFamily="@font/ksfont"
+            android:layout_marginTop="-20dp"/>
+
+
+        <ImageView
+            android:id="@+id/usernameblock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcometext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/rectangle_24kotakedittext"/>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/usernameblock"
+            android:layout_below="@+id/welcometext"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="27dp"
+            android:fontFamily="@font/ksfont"
+            android:hint="email"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:id="@+id/email_login"
+            android:background="@null"/>
+
+
+        <ImageView
+            android:id="@+id/password_block"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/usernameblock"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/rectangle_24kotakedittext" />
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/password_block"
+            android:layout_below="@+id/usernameblock"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="17dp"
+            android:fontFamily="@font/ksfont"
+            android:hint="password"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:id="@+id/password_login"
+            android:background="@null"/>
+        <Button
+            android:layout_width="234dp"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:textColor="@color/brown"
+            android:id="@+id/loginbtn"
+                android:fontFamily="@font/ksfont"
+                android:textSize="16dp"
+                android:backgroundTint="@color/white"
+                android:layout_below="@+id/password_block"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:src="@drawable/or"
+                android:layout_below="@id/loginbtn"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:id="@+id/orblock"/>
+        <Button
+            android:layout_width="234dp"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="@color/brown"
+            android:id="@+id/signupbtn"
+            android:fontFamily="@font/ksfont"
+            android:textSize="16dp"
+            android:backgroundTint="@color/white"
+            android:layout_below="@+id/orblock"
+            android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

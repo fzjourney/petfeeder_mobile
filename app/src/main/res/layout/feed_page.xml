@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:showDividers="middle"
+    android:background="@color/main_activity_background">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_go_to_another_page"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="58dp"
+        android:layout_width="35dp"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/back"
+        android:backgroundTint="@color/orange"
+        android:onClick="goToAnotherPage" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_go_to_another_page"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingHorizontal="40dp">
+
+        <TextView
+            android:id="@+id/txt_title_home"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/ksfont"
+            android:text="HELLO! HAPPY FEEDING"
+            android:textColor="@color/greens"
+            android:textSize="23dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginTop="-10dp"
+                android:layout_width="290dp"
+                android:layout_height="270dp"
+                android:layout_gravity="center"
+                android:src="@drawable/petbowl" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/light_on"
+                    android:tint="@color/orange"
+                    tools:ignore="UseAppTint" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ksfont"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="10dp"
+                    android:text="ON" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/feednow"
+            android:layout_marginTop="20dp"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button_feed"
+            android:text="FEED NOW"
+            android:textColor="@color/white"
+            android:fontFamily="@font/ksfont" />
+
+    </LinearLayout>
+</RelativeLayout>

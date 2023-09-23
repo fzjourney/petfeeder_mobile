@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="#272525"
+    tools:context=".SchedulePageActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backbtn1"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/back"
+        android:backgroundTint="@color/orange"
+        android:onClick="goToAnotherPage" />
+
+    <ImageView
+        android:id="@+id/dog1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="85dp"
+        android:src="@drawable/doggo2" />
+
+    <TextView
+        android:id="@+id/historytext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dog1"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="SCHEDULE"
+        android:fontFamily="@font/ksfont"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="23dp"
+        android:baselineAligned="false">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_schedule"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="575dp"
+        android:backgroundTint="#BBD163"
+        android:drawableLeft="@drawable/ic_add"
+        android:paddingLeft="5.5dp"
+        android:paddingTop="4dp"
+        app:cornerRadius="30dp" />
+
+</RelativeLayout>

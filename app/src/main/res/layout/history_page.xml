@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#272525"
+    tools:context=".HistoryPageActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backbtn1"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/back"
+        android:backgroundTint="@color/orange"
+        android:onClick="goToAnotherPage" />
+
+    <ImageView
+        android:id="@+id/dog1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="85dp"
+        android:src="@drawable/doggo" />
+
+    <TextView
+        android:id="@+id/historytext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dog1"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="HISTORY"
+        android:fontFamily="@font/ksfont"
+        android:textColor="@color/white"
+        android:textSize="35dp" />
+
+    <ListView
+        android:layout_marginTop="40dp"
+        android:id="@+id/history_list_view"
+        android:layout_width="360dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/historytext"
+        android:divider="@null"
+        android:layout_marginBottom="20dp"
+        android:dividerHeight="2dp"
+        android:layout_marginLeft="20dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        android:layout_above="@id/fragment_container" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_weight="1" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:background="@color/fragment_background_color"
+        app:itemIconTint="@drawable/bottom_navigation_icon_color"
+        app:menu="@menu/menu_fragment" />
+
+</RelativeLayout>
