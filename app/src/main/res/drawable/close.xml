@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="24.0"
+    android:viewportHeight="24.0">
+
+    <!-- Define the lines for the close symbol (X) -->
+    <path
+        android:pathData="M7,7L17,17"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2" />
+    <path
+        android:pathData="M7,17L17,7"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2" />
+
+</vector>

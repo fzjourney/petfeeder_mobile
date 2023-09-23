@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "330849635919",
+    "firebase_url": "https://esp32-fb-ea54c-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "esp32-fb-ea54c",
+    "storage_bucket": "esp32-fb-ea54c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330849635919:android:926ca413b850d00556a43a",
+        "android_client_info": {
+          "package_name": "com.example.petpider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "330849635919-s6c5vjvti6eh18t5qs7qat7j1ipffska.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9BhysyJl0Gcp4erx2V_4Ldh25nZmHWTw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "330849635919-s6c5vjvti6eh18t5qs7qat7j1ipffska.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
